@@ -55,7 +55,7 @@ def load(filename=None, folder=None, verbose=False, die=None, remapping=None, me
     '''
     Load a file that has been saved as a gzipped pickle file, e.g. by ``sc.save()``.
     Accepts either a filename (standard usage) or a file object as the first argument.
-    Note that ``sc.load()``/``sc.loadobj()`` are aliases of each other.
+    Note that :func:`load`/:func:`loadobj` are aliases of each other.
 
     Note: be careful when loading pickle files, since a malicious pickle can be
     used to execute arbitrary code.
