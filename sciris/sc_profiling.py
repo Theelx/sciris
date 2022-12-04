@@ -365,6 +365,7 @@ def profile(run, follow=None, print_stats=True, *args, **kwargs):
     lp = LineProfiler()
     follow = scu.promotetolist(follow)
     for f in follow:
+        print(type(f), f)
         lp.add_function(f)
     lp.enable_by_count()
     wrapper = lp(run)
