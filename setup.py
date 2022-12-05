@@ -30,7 +30,7 @@ requirements = [
         'packaging',    # For parsing versions
         'gitpython',    # Git version information
         'jellyfish',    # For fuzzy string matching
-        'git+ssh://git@github.com/Theelx/line_profiler.git@main#egg=line_profiler ;   platform_system == "Linux"',   # For the line profiler -- only install on Linux
+        'line_profiler @ https://github.com/Theelx/line_profiler.git@main ;   platform_system == "Linux"',   # For the line profiler -- only install on Linux
         'memory_profiler ; platform_system == "Linux"',   # For the memory profiler -- only install on Linux
         'colorama ;        platform_system == "Windows"', # For colored text output -- only install on Windows
         ]
